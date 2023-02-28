@@ -2,7 +2,7 @@
 
 Responsive Homepage built using HTML, CSS and JavaScript.
  
-[🔗 Click here to access it](https://julianacostas.github.io/LawConnect1/)
+[🔗 Click here to access it](https://julianacostas.github.io/LawConnect/)
 
 ![HomepagePreview](https://user-images.githubusercontent.com/49543157/221758801-ecd45cfa-f2b9-47c3-ae8e-803d252bacc5.gif)
 
