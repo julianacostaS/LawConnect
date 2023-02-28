@@ -1,0 +1,555 @@
+        /* Google fonts */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+        /* GENERAL STYLES */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            border: 0;
+            outline: 0;
+        }
+        
+         :root {
+            --color-primary-blue: #0A49AF;
+            --color-secondary-blue: #0E5FE3;
+            --color-btn-blue: #2AB7FD;
+            --color-white: #FFFFFF;
+            --color-bg-light-gray: #F6F7F8;
+            --color-black: #191919;
+            --container-width-lg: 80%;
+            --container-width-md: 90%;
+            --container-width-sm: 93%;
+            --transition: all 400ms ease;
+        }
+        
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--color-white);
+        }
+        
+        .container {
+            width: var(--container-width-lg);
+            margin: 0 auto
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        section h2 {
+            text-align: center;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+        }
+        
+        h3 {
+            font-size: 1.6rem;
+        }
+        
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.54px;
+        }
+        
+        p {
+            font-size: 1rem;
+        }
+        
+        a {
+            color: var(--color-white);
+        }
+        
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--color-btn-blue);
+            color: var(--color-white);
+            padding: .4rem .7rem;
+            border: 1px solid transparent;
+            font-weight: 600;
+            transition: var(--transition);
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            background: var(--color-secondary-blue);
+        }
+        /* NAVBAR */
+        
+        nav {
+            background: var(--color-primary-blue);
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 11;
+        }
+        
+        .nav-container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /*  HAMBURGER MENU */
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .logo {
+            height: 1.5rem;
+            width: auto;
+        }
+        
+        .nav-menu a {
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .menu {
+            display: none;
+        }
+        
+        .menu-line {
+            width: 20px;
+            height: 3px;
+            background-color: var(--color-white);
+            margin-bottom: 5px;
+        }
+        /* HEADER */
+        
+        header {
+            background: var(--color-primary-blue);
+            position: relative;
+            top: 5rem;
+            overflow: hidden;
+            height: 90vh;
+            margin-bottom: 5rem;
+        }
+        
+        .header-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            height: 100%;
+        }
+        
+        .header-left {
+            margin: 1rem 0 2.4rem;
+            width: 35vw;
+            max-width: 87%;
+        }
+        
+        .header-left h1,
+        p {
+            padding-bottom: 1.5rem;
+        }
+        
+        .header-right-image {
+            width: 600px;
+            height: 369px;
+        }
+        
+        picture {
+            display: block;
+            width: 100%;
+        }
+        /* Blue circle behind image header*/
+        /* .blue-circle {
+            position: relative;
+        }
+        
+        .header-right-image::before {
+            content: '';
+            width: 400px;
+            height: 400px;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            border: 70px solid var(--color-secondary-blue);
+        } */
+        /* SOLUTION SECTION */
+        
+        .solution {
+            background: var(--color-white);
+            padding-bottom: 0;
+        }
+        
+        .solution-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: left;
+            transition: var(--transition);
+            gap: 1rem;
+        }
+        
+        .solution h2 {
+            font-weight: 400;
+        }
+        
+        .solution h2,
+        h4 {
+            color: var(--color-secondary-blue);
+        }
+        
+        .solution-heading {
+            padding-bottom: 0;
+            text-align: center;
+        }
+        
+        .solution-container h4 {
+            padding: 23px 23px 10px 15px;
+        }
+        
+        .solution-container p {
+            padding: 10px 10px 10px 15px;
+            line-height: 1.5;
+            color: var(--color-black);
+            opacity: 70%;
+        }
+        
+        .solution-container img {
+            height: 160px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .solution-left,
+        .solution-mid,
+        .solution-right {
+            width: 322px;
+            height: 320px;
+            background: var(--color-white) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 15px #00000026;
+            border-radius: 5px;
+            opacity: 1;
+        }
+        
+        .solution-container>div:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+        }
+        /* SHARING DOCUMENTS SECTION */
+        
+        .sharing-documents {
+            background: var(--color-bg-light-gray);
+            position: relative;
+            top: 5rem;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .sharing-documents-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+        }
+        
+        .sharing-documents-left {
+            margin: 1rem 0 2.4rem;
+        }
+        
+        .sharing-documents-left h2 {
+            color: var(--color-secondary-blue);
+            padding-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .sharing-documents-left p {
+            color: var(--color-black);
+            padding-bottom: 1.5rem;
+            text-align: left;
+            max-width: 440px;
+        }
+        
+        .sharing-documents-right-image {
+            width: 367px;
+            height: 369px;
+        }
+        /* SIGNING DOCUMENTS SECTION */
+        
+        .signing-documents {
+            background: var(--color-white);
+            position: relative;
+            top: 5rem;
+            overflow: hidden;
+            height: 100%;
+            margin-bottom: 7rem;
+        }
+        
+        .signing-documents-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            height: 100%;
+        }
+        
+        .signing-documents-left {
+            margin-left: 15%;
+            width: 367px;
+            height: 369px;
+        }
+        
+        .signing-documents-right {
+            margin: 1rem 0 2.4rem;
+        }
+        
+        .signing-documents-right h2,
+        p {
+            padding-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .signing-documents-right h2 {
+            color: var(--color-secondary-blue);
+        }
+        
+        .signing-documents-right p {
+            color: var(--color-black);
+            max-width: 450px;
+        }
+        /* FOOTER */
+        
+        footer {
+            height: 7rem;
+            background: var(--color-black);
+        }
+        /* MEDIA QUERIES (TABLETS) */
+        
+        @media screen and (max-width:1024px) {
+            .container {
+                width: var(--container-width-md);
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            nav button {
+                display: inline-block;
+                background: transparent;
+                font-size: 1.8rem;
+                color: var(--color-white);
+                cursor: pointer;
+            }
+            header {
+                height: auto;
+                margin-bottom: 4rem;
+            }
+            .header-container {
+                gap: 0;
+                padding-bottom: 3rem;
+            }
+            picture {
+                width: 85%;
+            }
+            /* Solution section */
+            .solution-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .solution-right {
+                margin-top: 2rem;
+            }
+        }
+        /* MEDIA QUERIES (MOBILE) */
+        
+        @media screen and (max-width:600px) {
+            p {
+                font-size: 14px;
+            }
+            .container {
+                width: var(--container-width-sm);
+            }
+            .nav-container {
+                flex-direction: column;
+                position: relative;
+                gap: 0;
+            }
+            .nav-menu {
+                right: 3%;
+            }
+            .menu {
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+            }
+            .nav-menu {
+                list-style-type: none;
+                width: 100%;
+                text-align: center;
+                padding-top: 10px;
+                display: none;
+                background: var(--color-secondary-blue);
+            }
+            .list-item a {
+                display: block;
+            }
+            .container-logo {
+                display: grid;
+                align-self: start;
+            }
+            .container-logo .logo {
+                height: 20px;
+                margin-top: 13px;
+                margin-left: 10px;
+            }
+            .active {
+                display: block;
+            }
+            /* Header Section */
+            header {
+                height: 96vh;
+            }
+            .header-container {
+                /* grid-template-columns: 1fr; */
+                text-align: center;
+                padding-bottom: 0;
+                display: flex;
+                flex-direction: column;
+                /* max-width: 500px; */
+            }
+            .header-left {
+                width: 100%;
+                max-width: 300px;
+                margin: 1rem 0.5rem 0.5rem;
+                order: 1;
+            }
+            .header-container p {
+                text-align: center;
+                padding: 0 5px 24px;
+            }
+            .btn {
+                padding: .4rem 4.2rem;
+            }
+            .header-right-image {
+                height: auto;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            picture {
+                width: 50%;
+            }
+            /* Solution Section */
+            .solution {
+                padding-top: 60px;
+            }
+            .solution-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-right: 1rem;
+                padding-bottom: 40px;
+            }
+            .solution-left {
+                order: 3;
+                width: auto;
+                margin: 0 15px;
+            }
+            .solution-mid {
+                order: 2;
+                width: auto;
+                margin: 0 15px;
+            }
+            .solution-right {
+                margin-top: 5px;
+                order: 1;
+                width: auto;
+                margin: 0 15px;
+            }
+            /* Sharing documents Section */
+            .sharing-documents {
+                top: 0;
+                height: auto;
+                margin-bottom: 0;
+                padding-top: 2rem;
+                padding-bottom: 0;
+            }
+            .sharing-documents-container {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .sharing-documents-left {
+                order: 1;
+                margin-top: 2rem;
+            }
+            .sharing-documents-left h2 {
+                color: var(--color-primary-blue);
+                font-weight: 700;
+            }
+            .sharing-documents-left p {
+                padding-right: 4.8rem;
+            }
+            .sharing-documents-right-image {
+                height: auto;
+            }
+            .sharing-documents-right-image img {
+                width: 90vw;
+            }
+            /* Signing documents Section */
+            .signing-documents {
+                top: 0;
+                height: auto;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                padding-top: 1.4rem;
+            }
+            .signing-documents-container {
+                grid-template-columns: 1fr;
+            }
+            .signing-documents-right {
+                padding-right: 20px;
+                margin: 0;
+            }
+            .signing-documents-left {
+                margin-left: 0;
+                width: auto;
+                height: auto;
+            }
+            .signing-documents-left img {
+                width: 90vw;
+            }
+            .signing-documents-right h2 {
+                color: var(--color-primary-blue);
+                font-weight: 700;
+            }
+            .signing-documents-left p {
+                padding-right: 4rem;
+            }
+            footer {
+                height: 3rem;
+            }
+        }
